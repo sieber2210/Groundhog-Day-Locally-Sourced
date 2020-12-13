@@ -5,12 +5,15 @@ public class Gun : MonoBehaviour
     [SerializeField] PlayerWeapon_SO gunType;
     [SerializeField] ParticleSystem muzzleFlash;
 
+    FMOD.Studio.EventInstance FireSound;
+    
     Camera cam;
     float nextTimeToFire = 0f;
 
     private void Start()
     {
         cam = GetComponentInParent<Camera>();
+        FireSound = FMODUnity.RuntimeManager.CreateInstance("event:/shot");
     }
 
     private void Update()
@@ -35,6 +38,9 @@ public class Gun : MonoBehaviour
     void Shoot()
     {
         muzzleFlash.Play();
+
+        FireSound.start();
+
 
         RaycastHit hit;
         if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, gunType.range))
