@@ -13,7 +13,8 @@ public class Gun : MonoBehaviour
     private void Start()
     {
         cam = GetComponentInParent<Camera>();
-        FireSound = FMODUnity.RuntimeManager.CreateInstance("event:/shot");
+        Debug.Log(gunType.name);
+        FireSound = FMODUnity.RuntimeManager.CreateInstance("event:/guns/" + gunType.name);
     }
 
     private void Update()
@@ -40,7 +41,6 @@ public class Gun : MonoBehaviour
         muzzleFlash.Play();
 
         FireSound.start();
-
 
         RaycastHit hit;
         if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, gunType.range))
