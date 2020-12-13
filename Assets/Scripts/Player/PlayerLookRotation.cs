@@ -10,8 +10,10 @@ public class PlayerLookRotation : MonoBehaviour
         xRotationLock -= mouseY;
         xRotationLock = Mathf.Clamp(xRotationLock, -lookRange, lookRange);
 
+        Quaternion xRot = Quaternion.Euler(xRotationLock, 0f, 0f);
+
         //Set the rotation of the camera to the y movement of the mouse
-        camera.localRotation = Quaternion.Euler(xRotationLock, 0f, 0f);
+        camera.localRotation = xRot;
         //Set the rotation of the player object to the x movement of the mouse
         transform.Rotate(Vector3.up * mouseX);
     }

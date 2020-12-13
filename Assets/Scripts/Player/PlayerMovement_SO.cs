@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Player Stats", menuName = "Player Stats")]
+[CreateAssetMenu(fileName = "New Player Stats", menuName = "Player/Player Stats")]
 public class PlayerMovement_SO : ScriptableObject
 {
     [Header("Lock and Hide Mouse")]
