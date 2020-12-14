@@ -23,6 +23,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1725
+--- !u!114 &-8701172617140079910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTest/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-8583670649432433361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,7 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: GroundhogFMOD/Build/Desktop/Master.bank
   Name: Master
-  lastModified: 637434959580000000
+  lastModified: 637434977480000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -127,6 +147,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-943307781980526106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTest/LPF
+  m_EditorClassIdentifier: 
+  Name: LPF
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,12 +188,13 @@ MonoBehaviour:
   - {fileID: -8583670649432433361}
   - {fileID: 4291131397064235651}
   - {fileID: 626889240291310748}
+  - {fileID: 8774269205315382728}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4910404851882516937}
   StringsBanks:
   - {fileID: 7354150644799842962}
-  stringsBankWriteTime: 637434959580000000
+  stringsBankWriteTime: 637434977480000000
   cacheVersion: 5
 --- !u!114 &626889240291310748
 MonoBehaviour:
@@ -282,9 +323,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: GroundhogFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637434959580000000
+  lastModified: 637434977480000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 978
+    Value: 1102
   Exists: 1
+--- !u!114 &8774269205315382728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MusicTest
+  m_EditorClassIdentifier: 
+  Path: event:/MusicTest
+  guid: b474e51e81248f4d8b8b834a4bcd690a
+  Banks:
+  - {fileID: -4910404851882516937}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -8701172617140079910}
+  - {fileID: -943307781980526106}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 46080
