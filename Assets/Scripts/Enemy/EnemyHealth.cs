@@ -14,11 +14,20 @@ public class EnemyHealth : MonoBehaviour
     public void TakeDamage(int amount)
     {
         curHealth -= amount;
+        
         if (curHealth <= 0) Die();
+
+        //Havokk
+
+        FMODUnity.RuntimeManager.PlayOneShot("event:/damage",transform.position);
     }
 
     void Die()
     {
         Destroy(gameObject);
+
+        //Havokk
+
+        FMODUnity.RuntimeManager.PlayOneShot("event:/die", transform.position);
     }
 }

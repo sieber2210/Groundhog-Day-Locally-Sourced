@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
-	<object class="AudioFile" id="{15144ad9-fc9a-483b-a837-0f04eed99672}">
+	<object class="AudioFile" id="{fdffb8be-6041-4036-9320-05062388134f}">
 		<property name="assetPath">
-			<value>Guns/Rifle/Gun1Fizz.wav</value>
+			<value>Monster/Pain/Monster Within - Bearer - Vocal_Pain01.wav</value>
 		</property>
 		<property name="frequencyInKHz">
-			<value>44.0999985</value>
+			<value>96</value>
 		</property>
 		<property name="channelCount">
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>1.7259637188208616</value>
+			<value>1.7939791666666667</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{21890f59-691b-4060-90f2-2d287bf7bd30}</destination>

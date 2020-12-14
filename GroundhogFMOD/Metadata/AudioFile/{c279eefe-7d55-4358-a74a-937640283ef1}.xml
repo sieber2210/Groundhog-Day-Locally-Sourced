@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{c279eefe-7d55-4358-a74a-937640283ef1}">
 		<property name="assetPath">
-			<value>Utilities-Rifle-mechanisms-05.wav</value>
+			<value>Guns/Utilities-Rifle-mechanisms-05.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>96</value>

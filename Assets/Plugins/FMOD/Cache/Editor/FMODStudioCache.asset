@@ -103,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: GroundhogFMOD/Build/Desktop/Master.bank
   Name: Master
-  lastModified: 637434834880000000
+  lastModified: 637434959580000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -146,13 +146,38 @@ MonoBehaviour:
   - {fileID: -9151830476721583149}
   - {fileID: 1193624685275470517}
   - {fileID: -8583670649432433361}
+  - {fileID: 4291131397064235651}
+  - {fileID: 626889240291310748}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4910404851882516937}
   StringsBanks:
   - {fileID: 7354150644799842962}
-  stringsBankWriteTime: 637434834880000000
+  stringsBankWriteTime: 637434959580000000
   cacheVersion: 5
+--- !u!114 &626889240291310748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Die
+  m_EditorClassIdentifier: 
+  Path: event:/Die
+  guid: 4072900ad18370428695ebb57874dbe4
+  Banks:
+  - {fileID: -4910404851882516937}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 80
+  Length: 1057
 --- !u!114 &1193624685275470517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,6 +223,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 4836
+--- !u!114 &4291131397064235651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Damage
+  m_EditorClassIdentifier: 
+  Path: event:/Damage
+  guid: 230a6d1ccd2c4a4e9046eeb36ded0001
+  Banks:
+  - {fileID: -4910404851882516937}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 80
+  Length: 1864
 --- !u!114 &5787356275028628862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,9 +282,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: GroundhogFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637434834880000000
+  lastModified: 637434959580000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 884
+    Value: 978
   Exists: 1

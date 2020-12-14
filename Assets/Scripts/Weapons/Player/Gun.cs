@@ -50,10 +50,13 @@ public class Gun : MonoBehaviour
         {
             EnemyHealth enemy = hit.transform.GetComponent<EnemyHealth>();
             if (enemy != null) 
-            { 
+            {
                 enemy.TakeDamage(gunType.damage);
                 //instantiate enemy impact effect
                 //remove effect after x seconds
+
+                //Havokk
+
             }
             else
             {
