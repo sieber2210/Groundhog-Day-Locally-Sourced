@@ -6,6 +6,8 @@ public class WeaponSwitcher : MonoBehaviour
 
     [HideInInspector]public int curWeapon;
 
+    int lastCurWeapon;
+
     private void Start()
     {
         curWeapon = 0;
@@ -29,6 +31,7 @@ public class WeaponSwitcher : MonoBehaviour
             weapons[0].SetActive(false);
             weapons[1].SetActive(true);
         }
+
     }
 
     void SwitchWeapon()

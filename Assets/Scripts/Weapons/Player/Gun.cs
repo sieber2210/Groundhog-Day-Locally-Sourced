@@ -5,15 +5,18 @@ public class Gun : MonoBehaviour
     [SerializeField] PlayerWeapon_SO gunType;
     [SerializeField] ParticleSystem muzzleFlash;
 
-    FMOD.Studio.EventInstance FireSound;
-    
     Camera cam;
     float nextTimeToFire = 0f;
+
+    //Havokk
+    FMOD.Studio.EventInstance FireSound;
 
     private void Start()
     {
         cam = GetComponentInParent<Camera>();
-        Debug.Log(gunType.name);
+        
+        //Havokk
+        //Debug.Log(gunType.name);
         FireSound = FMODUnity.RuntimeManager.CreateInstance("event:/guns/" + gunType.name);
     }
 
