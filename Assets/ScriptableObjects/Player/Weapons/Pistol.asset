@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e35eefc9137a1174bb486f3fa7e45048, type: 3}
   m_Name: Pistol
   m_EditorClassIdentifier: 
+  weaponClassName: Pistol
   damage: 5
   range: 60
+  isAuto: 0
+  fireRate: 0

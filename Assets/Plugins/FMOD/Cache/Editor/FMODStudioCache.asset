@@ -123,7 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: GroundhogFMOD/Build/Desktop/Master.bank
   Name: Master
-  lastModified: 637434977480000000
+  lastModified: 637435409987196492
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -194,7 +194,7 @@ MonoBehaviour:
   - {fileID: -4910404851882516937}
   StringsBanks:
   - {fileID: 7354150644799842962}
-  stringsBankWriteTime: 637434977480000000
+  stringsBankWriteTime: 637435409987206501
   cacheVersion: 5
 --- !u!114 &626889240291310748
 MonoBehaviour:
@@ -309,6 +309,46 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 4836
+--- !u!114 &6778547484782229933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTest/LPF
+  m_EditorClassIdentifier: 
+  Name: LPF
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &6795363345883225346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTest/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &7354150644799842962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,7 +363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: GroundhogFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637434977480000000
+  lastModified: 637435409987206501
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -349,8 +389,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -8701172617140079910}
-  - {fileID: -943307781980526106}
+  - {fileID: 6795363345883225346}
+  - {fileID: 6778547484782229933}
   MinDistance: 1
   MaxDistance: 20
   Length: 46080

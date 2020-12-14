@@ -17,7 +17,7 @@ public class Gun : MonoBehaviour
         
         //Havokk
         //Debug.Log(gunType.name);
-        FireSound = FMODUnity.RuntimeManager.CreateInstance("event:/guns/" + gunType.name);
+        FireSound = FMODUnity.RuntimeManager.CreateInstance("event:/guns/" + gunType.weaponClassName);
     }
 
     private void Update()
