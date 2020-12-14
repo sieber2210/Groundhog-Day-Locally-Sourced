@@ -2,13 +2,15 @@
 
 public class EnemyHealth : MonoBehaviour
 {
-    [SerializeField] Enemy_SO enemyStats;
+    EnemyController enemyStats;
 
     int curHealth;
 
     private void Start()
     {
-        curHealth = enemyStats.maxHealth;
+        enemyStats = GetComponent<EnemyController>();
+
+        curHealth = enemyStats.stats.maxHealth;
     }
 
     public void TakeDamage(int amount)
