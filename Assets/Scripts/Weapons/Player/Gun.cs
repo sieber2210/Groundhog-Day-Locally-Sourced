@@ -55,7 +55,6 @@ public class Gun : MonoBehaviour
                 //instantiate enemy impact effect
                 //remove effect after x seconds
 
-                //Havokk
 
             }
             else
@@ -63,6 +62,14 @@ public class Gun : MonoBehaviour
                 //instantiate non enemy impact effect
                 //remove effect after x seconds
             }
+
+            //Havokk
+            Boom radio = hit.transform.GetComponent<Boom>();
+            if(radio != null)
+            {
+                radio.TakeDamage(gunType.damage);
+            }
+            //
         }
     }
 }

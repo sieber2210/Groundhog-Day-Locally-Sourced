@@ -55,6 +55,13 @@ public class FirstPersonOcclusion : MonoBehaviour
             OccludeBetween(transform.position, Listener.transform.position);
 
         lineCastHitCount = 0f;
+
+        /*Debug.Log(gameObject.activeInHierarchy);
+
+        if (gameObject.activeInHierarchy != true)
+        {
+            Debug.Log("BOOM");
+        }*/
     }
 
     private void OccludeBetween(Vector3 sound, Vector3 listener)
@@ -134,6 +141,12 @@ public class FirstPersonOcclusion : MonoBehaviour
     private void SetParameter()
     {
         Audio.setParameterByName("Occlusion", lineCastHitCount / 11);
-        Debug.Log(lineCastHitCount);
     }
+
+    void OnDestroy()
+    {
+        Audio.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        Audio.release();
+    }
+
 }

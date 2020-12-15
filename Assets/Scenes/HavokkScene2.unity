@@ -539,7 +539,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 761c29279066036409e2d15bdbfae3f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyStats: {fileID: 11400000, guid: c8fe26b190f575648a67921cd412f139, type: 2}
 --- !u!198 &344585449 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 198555246981245182, guid: 3ea7f3c3fc80e8a41a0eaa283551cfdc,
@@ -2299,8 +2298,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1813397036
 GameObject:
   m_ObjectHideFlags: 0
@@ -2647,6 +2646,8 @@ GameObject:
   - component: {fileID: 2119530946}
   - component: {fileID: 2119530945}
   - component: {fileID: 2119530944}
+  - component: {fileID: 2119530949}
+  - component: {fileID: 2119530950}
   m_Layer: 0
   m_Name: Radio
   m_TagString: Untagged
@@ -2666,6 +2667,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddba7fe25ed3afa468c926cb299d382e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SelectAudio: event:/MusicTest
+  SoundOcclusionWidening: 1.01
+  PlayerOcclusionWidening: 1
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!65 &2119530945
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2740,3 +2747,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2119530949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119530943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1324790a6a10b1343b4f556dfe63f840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2119530950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119530943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: 
+  PlayEvent: 2
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
