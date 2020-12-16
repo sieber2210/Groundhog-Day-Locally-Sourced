@@ -5,7 +5,7 @@ using System.Collections;
 public class EnemyAI : MonoBehaviour
 {
     public enum AIState { Idle, Attack, Chase };
-    public AIState aIState = AIState.Idle;
+    AIState aIState = AIState.Idle;
 
     [SerializeField] Transform spellSpawnPos;
 
