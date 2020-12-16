@@ -16,5 +16,6 @@ MonoBehaviour:
   speed: 6
   chaseSpeed: 12
   minRoamRange: 2
-  maxRoamRange: 20
-  thoughtTime: 1
+  maxRoamRange: 8
+  thoughtTime: 4
+  animationSmoothDamp: 0.1

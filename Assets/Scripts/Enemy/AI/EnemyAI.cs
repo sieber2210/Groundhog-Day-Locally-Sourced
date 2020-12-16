@@ -23,14 +23,21 @@ public class EnemyAI : MonoBehaviour
         StartCoroutine(StateMachine());
     }
 
+    private void Update()
+    {
+        float speedPercent = agent.velocity.magnitude / agent.speed;
+        stats.anim.SetFloat("Locomotion", speedPercent, stats.stats.animationSmoothDamp, Time.deltaTime);
+    }
+
     IEnumerator StateMachine()
     {
         while (isAlive)
         {
             if(target == null)
             {
-                yield return new WaitForSeconds(stats.stats.thoughtTime);
                 IdleRoam();
+                yield return new WaitForSeconds(stats.stats.thoughtTime);
+                Idle();
             }
             else
             {
@@ -41,9 +48,14 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    void IdleRoam()
+    void Idle()
     {
         agent.speed = stats.stats.speed;
+        agent.SetDestination(transform.position);
+    }
+
+    void IdleRoam()
+    {
         startPos = transform.position;
         roamPos = startPos + GetRandomRoamPos();
         agent.SetDestination(roamPos);

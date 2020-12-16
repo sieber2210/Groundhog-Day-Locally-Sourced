@@ -8,4 +8,5 @@ public class Enemy_SO : ScriptableObject
     public float speed, chaseSpeed;
     public float minRoamRange, maxRoamRange;
     public float thoughtTime;
+    public float animationSmoothDamp;
 }
