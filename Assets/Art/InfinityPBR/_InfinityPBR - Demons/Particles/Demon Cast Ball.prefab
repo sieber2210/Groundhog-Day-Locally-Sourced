@@ -9742,6 +9742,8 @@ GameObject:
   - component: {fileID: 19865100}
   - component: {fileID: 19928176}
   - component: {fileID: -1936923375515103650}
+  - component: {fileID: 1260073093}
+  - component: {fileID: 1260073094}
   m_Layer: 0
   m_Name: Demon Cast Ball
   m_TagString: Untagged
@@ -14387,6 +14389,33 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &1260073093
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154036}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.15
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1260073094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a6e1b71df23a0b4b85fddd2f2d65403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
+  destroyTime: 0
 --- !u!1 &184100
 GameObject:
   m_ObjectHideFlags: 0

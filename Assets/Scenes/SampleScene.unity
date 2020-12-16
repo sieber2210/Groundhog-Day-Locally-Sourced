@@ -170,7 +170,7 @@ Transform:
   - {fileID: 306726856}
   - {fileID: 2008368227}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &87627398
 MonoBehaviour:
@@ -617,82 +617,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
---- !u!1001 &593198479
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 154036, guid: 08aeb6c2c0076481a974cc8bc1e746df, type: 3}
-      propertyPath: m_Name
-      value: Demon Cast Ball
-      objectReference: {fileID: 0}
-    - target: {fileID: 494108, guid: 08aeb6c2c0076481a974cc8bc1e746df, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 494108, guid: 08aeb6c2c0076481a974cc8bc1e746df, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.9491093
-      objectReference: {fileID: 0}
-    - target: {fileID: 494108, guid: 08aeb6c2c0076481a974cc8bc1e746df, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.347
-      objectReference: {fileID: 0}
-    - target: {fileID: 494108, guid: 08aeb6c2c0076481a974cc8bc1e746df, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 18.616
-      objectReference: {fileID: 0}
-    - target: {fileID: 494108, guid: 08aeb6c2c0076481a974cc8bc1e746df, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 494108, guid: 08aeb6c2c0076481a974cc8bc1e746df, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 494108, guid: 08aeb6c2c0076481a974cc8bc1e746df, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 494108, guid: 08aeb6c2c0076481a974cc8bc1e746df, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 494108, guid: 08aeb6c2c0076481a974cc8bc1e746df, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 494108, guid: 08aeb6c2c0076481a974cc8bc1e746df, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 494108, guid: 08aeb6c2c0076481a974cc8bc1e746df, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 08aeb6c2c0076481a974cc8bc1e746df, type: 3}
---- !u!1 &593198480 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 154036, guid: 08aeb6c2c0076481a974cc8bc1e746df,
-    type: 3}
-  m_PrefabInstance: {fileID: 593198479}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &593198481
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 593198480}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.15
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!198 &607991493 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 198555246981245182, guid: 3ea7f3c3fc80e8a41a0eaa283551cfdc,
@@ -817,7 +741,7 @@ Transform:
   - {fileID: 1714202502}
   - {fileID: 933503939}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &636749765
 CapsuleCollider:
@@ -1087,7 +1011,7 @@ RectTransform:
   m_Children:
   - {fileID: 1735983706}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2325,7 +2249,7 @@ Transform:
   - {fileID: 1086125620}
   - {fileID: 1112289848}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1869853566
 PrefabInstance:
