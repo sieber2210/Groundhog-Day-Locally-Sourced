@@ -87,6 +87,11 @@ public class EnemyAI : MonoBehaviour
         else if (dist <= stats.stats.attackRange)
             aIState = AIState.Attack;
 
+        float randVal = Random.value;
+        if (randVal >= stats.stats.chanceToCast && dist <= stats.stats.distFromPlayerToCast)
+            ChargeSpell();
+        else ChaseTarget(dist);
+
         agent.SetDestination(player.position);
     }
 
@@ -100,21 +105,10 @@ public class EnemyAI : MonoBehaviour
         else
             aIState = AIState.Chase;
 
-        float randVal = Random.value;
-        if(randVal >= stats.stats.chanceToCast)
-        {
-            if (dist >= stats.stats.distFromPlayerToCast)
-                ChargeSpell();
-            else
-                AttackTarget(dist);
-        }
+        if (target != null)
+            stats.Attack(target.gameObject);
         else
-        {
-            if (target != null)
-                stats.Attack(target.gameObject);
-            else
-                Debug.LogError(gameObject.name + " has attacked an object not marked as target");
-        }        
+            Debug.LogError(gameObject.name + " has attacked an object not marked as target");
     }
 
     void ChargeSpell()
