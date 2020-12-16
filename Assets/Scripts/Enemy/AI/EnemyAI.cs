@@ -4,73 +4,142 @@ using System.Collections;
 
 public class EnemyAI : MonoBehaviour
 {
+    public enum AIState { Idle, Attack, Chase };
+    public AIState aIState = AIState.Idle;
+
+    [SerializeField] Transform spellSpawnPos;
+
     NavMeshAgent agent;
     EnemyController stats;
     Transform target;
+    Transform player;
     Vector3 startPos;
     Vector3 roamPos;
-    bool isAlive = true;
+    float timeToCast = 0f;
 
     private void Start()
     {
+        player = GameObject.FindWithTag("Player").transform;
         stats = GetComponent<EnemyController>();
         agent = GetComponent<NavMeshAgent>();
         agent.speed = stats.stats.speed;
-        startPos = transform.position;
-        roamPos = startPos + GetRandomRoamPos();
-        agent.SetDestination(roamPos);
-
         StartCoroutine(StateMachine());
     }
 
     private void Update()
     {
-        float speedPercent = agent.velocity.magnitude / agent.speed;
-        stats.anim.SetFloat("Locomotion", speedPercent, stats.stats.animationSmoothDamp, Time.deltaTime);
+        if(aIState == AIState.Chase || aIState == AIState.Idle)
+        {
+            float speedPercent = agent.velocity.magnitude / agent.speed;
+            stats.anim.SetFloat("Locomotion", speedPercent, stats.stats.animationSmoothDamp, Time.deltaTime);
+        }
     }
 
     IEnumerator StateMachine()
     {
-        while (isAlive)
+        while (stats.anim.GetBool("IsAlive"))
         {
-            if(target == null)
+            float dist = 0f;
+            switch (aIState)
             {
-                IdleRoam();
-                yield return new WaitForSeconds(stats.stats.thoughtTime);
-                Idle();
+                case AIState.Idle:
+                    Idle(dist);
+                    break;
+
+                case AIState.Chase:
+                    ChaseTarget(dist);
+                    break;
+
+                case AIState.Attack:
+                    AttackTarget(dist);
+                    break;
             }
-            else
-            {
-                if (Vector3.Distance(transform.position, target.position) > agent.stoppingDistance) ChaseTarget();
-                else AttackTarget();
-            }
-            yield return null;
+            yield return new WaitForSeconds(stats.stats.thoughtTime);
         }
     }
 
-    void Idle()
+    void Idle(float dist)
     {
         agent.speed = stats.stats.speed;
-        agent.SetDestination(transform.position);
+        dist = Vector3.Distance(player.position, transform.position);
+        if (dist <= stats.stats.perceptionRadius)
+            aIState = AIState.Chase;
+        else if (dist <= stats.stats.attackRange)
+            aIState = AIState.Attack;
+
+        float randWanderChance = Random.value;
+        if (randWanderChance <= stats.stats.wanderChancePercent)
+        {
+            startPos = transform.position;
+            roamPos = GetRandomRoamPos() + startPos;
+            agent.SetDestination(roamPos);
+        }
+        else
+            agent.SetDestination(transform.position);
     }
 
-    void IdleRoam()
+    void ChaseTarget(float dist)
     {
-        startPos = transform.position;
-        roamPos = startPos + GetRandomRoamPos();
-        agent.SetDestination(roamPos);
-    }
-
-    void ChaseTarget()
-    {
-        agent.SetDestination(target.position);
         agent.speed = stats.stats.chaseSpeed;
+        dist = Vector3.Distance(player.position, transform.position);
+        if (dist >= stats.stats.perceptionRadius)
+            aIState = AIState.Idle;
+        else if (dist <= stats.stats.attackRange)
+            aIState = AIState.Attack;
+
+        agent.SetDestination(player.position);
     }
 
-    void AttackTarget()
+    void AttackTarget(float dist)
     {
-        stats.Attack(target.gameObject);
         agent.speed = stats.stats.speed;
+
+        dist = Vector3.Distance(player.position, transform.position);
+        if (dist >= stats.stats.attackRange && dist >= stats.stats.perceptionRadius)
+            aIState = AIState.Idle;
+        else
+            aIState = AIState.Chase;
+
+        float randVal = Random.value;
+        if(randVal >= stats.stats.chanceToCast)
+        {
+            if (dist >= stats.stats.distFromPlayerToCast)
+                ChargeSpell();
+            else
+                AttackTarget(dist);
+        }
+        else
+        {
+            if (target != null)
+                stats.Attack(target.gameObject);
+            else
+                Debug.LogError(gameObject.name + " has attacked an object not marked as target");
+        }        
+    }
+
+    void ChargeSpell()
+    {
+        agent.SetDestination(transform.position);
+        stats.anim.SetTrigger("CastStart");
+        GameObject spell = Instantiate(stats.stats.spellPrefab, spellSpawnPos.position, Quaternion.identity, spellSpawnPos);
+
+        SpellBall ball = spell.GetComponent<SpellBall>();
+        ball.damage = stats.stats.spellDamage;
+        ball.destroyTime = stats.stats.spellRange;
+
+        if(Time.time >= timeToCast)
+        {
+            timeToCast = Time.time + stats.stats.castTime;
+            ShootSpell(spell);
+        }
+    }
+
+    void ShootSpell(GameObject spell)
+    {
+        stats.anim.SetTrigger("CastEnd");
+        Rigidbody rb = spell.GetComponent<Rigidbody>();
+        rb.AddForce(transform.forward * stats.stats.spellSpeed, ForceMode.Impulse);
+        aIState = AIState.Idle;
     }
 
     Vector3 GetRandomRoamPos()

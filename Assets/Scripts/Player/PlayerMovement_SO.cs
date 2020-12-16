@@ -32,4 +32,6 @@ public class PlayerMovement_SO : ScriptableObject
     public float groundCheckRadius;
     [Tooltip("Variable to determine what is the ground to be marked by the user with the defined layer mask")]
     public LayerMask whatIsGround;
+
+    public int maxHealth;
 }
