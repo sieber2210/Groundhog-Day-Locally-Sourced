@@ -114,7 +114,7 @@ public class EnemyAI : MonoBehaviour
     {
         agent.SetDestination(transform.position);
         stats.anim.SetTrigger("CastStart");
-        GameObject spell = Instantiate(stats.stats.spellPrefab, spellSpawnPos.position, Quaternion.identity, spellSpawnPos);
+        GameObject spell = Instantiate(stats.stats.spellPrefab, spellSpawnPos.position, Quaternion.identity);
 
         SpellBall ball = spell.GetComponent<SpellBall>();
         ball.damage = stats.stats.spellDamage;
