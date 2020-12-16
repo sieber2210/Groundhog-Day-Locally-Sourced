@@ -90,7 +90,6 @@ public class EnemyAI : MonoBehaviour
         float randVal = Random.value;
         if (randVal >= stats.stats.chanceToCast && dist <= stats.stats.distFromPlayerToCast)
             ChargeSpell();
-        else ChaseTarget(dist);
 
         agent.SetDestination(player.position);
     }

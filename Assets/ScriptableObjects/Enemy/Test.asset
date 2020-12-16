@@ -17,16 +17,16 @@ MonoBehaviour:
   chaseSpeed: 12
   minRoamRange: 2
   maxRoamRange: 8
-  thoughtTime: 4
+  thoughtTime: 1
   wanderChancePercent: 0.5
   perceptionRadius: 30
-  attackRange: 2
+  attackRange: 3
   animationSmoothDamp: 0.1
-  castTime: 3
+  castTime: 5
   spellRange: 20
-  spellSpeed: 50
+  spellSpeed: 5
   chanceToCast: 0.5
-  distFromPlayerToCast: 5
+  distFromPlayerToCast: 10
   spellPrefab: {fileID: 154036, guid: 08aeb6c2c0076481a974cc8bc1e746df, type: 3}
   damage: 5
   spellDamage: 10

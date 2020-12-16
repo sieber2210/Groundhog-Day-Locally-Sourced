@@ -167,8 +167,8 @@ Transform:
   m_LocalPosition: {x: 0, y: -1, z: 15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 306726856}
   - {fileID: 2008368227}
+  - {fileID: 306726856}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -198,7 +198,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 2
+  m_StoppingDistance: 3
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -218,8 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94ec6375effe0fb45943c4c965c30681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIState: 0
-  spellSpawnPos: {fileID: 0}
+  spellSpawnPos: {fileID: 1349266291}
 --- !u!114 &87627401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,7 +353,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: dc21826637ac14049809f1e032278701,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dc21826637ac14049809f1e032278701,
         type: 3}
@@ -2523,7 +2522,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400034, guid: 19a298131cb3d4c92b80dc152867695e, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400034, guid: 19a298131cb3d4c92b80dc152867695e, type: 3}
       propertyPath: m_LocalPosition.x

@@ -6,7 +6,7 @@ public class EnemyController : MonoBehaviour
 
     [HideInInspector]public Animator anim;
 
-    private void Start()
+    private void Awake()
     {
         anim = GetComponentInChildren<Animator>();
     }
@@ -15,5 +15,10 @@ public class EnemyController : MonoBehaviour
     {
         Debug.Log(gameObject.name + " has attacked " + victim.name);
         anim.SetTrigger("Attack");
+        PlayerHealth player = victim.GetComponent<PlayerHealth>();
+        if(player != null)
+        {
+            player.TakeDamage(stats.damage);
+        }
     }
 }

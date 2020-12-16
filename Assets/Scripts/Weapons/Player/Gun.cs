@@ -49,8 +49,8 @@ public class Gun : MonoBehaviour
         if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, gunType.range))
         {
             EnemyHealth enemy = hit.transform.GetComponent<EnemyHealth>();
-            EnemyController eControl = enemy.GetComponent<EnemyController>();
-            if (enemy != null) 
+            EnemyController eControl = hit.transform.GetComponent<EnemyController>();
+            if (enemy != null && eControl != null) 
             {
                 enemy.TakeDamage(gunType.damage);
                 eControl.anim.SetTrigger("Hit");

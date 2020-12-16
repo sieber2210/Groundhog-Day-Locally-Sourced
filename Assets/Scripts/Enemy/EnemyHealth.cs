@@ -26,10 +26,10 @@ public class EnemyHealth : MonoBehaviour
 
     void Die()
     {
-        Destroy(gameObject);
-
+        enemyStats.anim.SetBool("IsAlive", false);
+        enemyStats.anim.SetTrigger("Death");
         //Havokk
-
         FMODUnity.RuntimeManager.PlayOneShot("event:/die", transform.position);
+        Destroy(gameObject, 15f);
     }
 }
