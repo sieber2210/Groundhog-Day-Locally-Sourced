@@ -21,9 +21,5 @@ public class SpellBall : MonoBehaviour
                 Debug.LogError("Player has no health system");
             Destroy(gameObject);
         }
-        else
-        {
-            Destroy(gameObject);
-        }
     }
 }

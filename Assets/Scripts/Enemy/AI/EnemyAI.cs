@@ -15,7 +15,6 @@ public class EnemyAI : MonoBehaviour
     Transform player;
     Vector3 startPos;
     Vector3 roamPos;
-    float timeToCast = 0f;
 
     private void Start()
     {
@@ -89,7 +88,7 @@ public class EnemyAI : MonoBehaviour
 
         float randVal = Random.value;
         if (randVal >= stats.stats.chanceToCast && dist <= stats.stats.distFromPlayerToCast)
-            ChargeSpell();
+            StartCoroutine(ChargeSpell());
 
         agent.SetDestination(player.position);
     }
@@ -97,40 +96,39 @@ public class EnemyAI : MonoBehaviour
     void AttackTarget(float dist)
     {
         agent.speed = stats.stats.speed;
+                
+        if (target != null)
+            stats.Attack(target.gameObject);
+        else
+            Debug.LogError(gameObject.name + " has attacked an object not marked as target");
 
         dist = Vector3.Distance(player.position, transform.position);
         if (dist >= stats.stats.attackRange && dist >= stats.stats.perceptionRadius)
             aIState = AIState.Idle;
         else
             aIState = AIState.Chase;
-
-        if (target != null)
-            stats.Attack(target.gameObject);
-        else
-            Debug.LogError(gameObject.name + " has attacked an object not marked as target");
     }
 
-    void ChargeSpell()
+    IEnumerator ChargeSpell()
     {
-        agent.SetDestination(transform.position);
+        agent.speed = 0f;
         stats.anim.SetTrigger("CastStart");
-        GameObject spell = Instantiate(stats.stats.spellPrefab, spellSpawnPos.position, Quaternion.identity);
+        GameObject spell = Instantiate(stats.stats.spellPrefab, spellSpawnPos.position, spellSpawnPos.rotation);
+        spell.transform.parent = spellSpawnPos;
 
         SpellBall ball = spell.GetComponent<SpellBall>();
         ball.damage = stats.stats.spellDamage;
         ball.destroyTime = stats.stats.spellRange;
-
-        if(Time.time >= timeToCast)
-        {
-            timeToCast = Time.time + stats.stats.castTime;
-            ShootSpell(spell);
-        }
+        yield return new WaitForSeconds(stats.stats.castTime);
+        ShootSpell(spell);
     }
 
     void ShootSpell(GameObject spell)
     {
         stats.anim.SetTrigger("CastEnd");
         Rigidbody rb = spell.GetComponent<Rigidbody>();
+        spell.transform.parent = null;
+        spell.transform.rotation = transform.rotation;
         rb.AddForce(transform.forward * stats.stats.spellSpeed, ForceMode.Impulse);
         aIState = AIState.Idle;
     }
