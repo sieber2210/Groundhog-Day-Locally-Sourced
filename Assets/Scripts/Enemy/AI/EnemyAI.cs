@@ -85,11 +85,11 @@ public class EnemyAI : MonoBehaviour
             aIState = AIState.Idle;
         else if (dist <= stats.stats.attackRange)
             aIState = AIState.Attack;
-
+        /*
         float randVal = Random.value;
         if (randVal >= stats.stats.chanceToCast && dist <= stats.stats.distFromPlayerToCast)
             StartCoroutine(ChargeSpell());
-
+        */
         agent.SetDestination(player.position);
     }
 
