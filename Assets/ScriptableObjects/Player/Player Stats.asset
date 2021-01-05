@@ -27,5 +27,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   maxHealth: 100
-  shieldUpTime: 5
+  shieldUpTime: 15
   coolDown: 5
+  startSize: 0.1
+  maxSize: 8
+  scaleSpeed: 1

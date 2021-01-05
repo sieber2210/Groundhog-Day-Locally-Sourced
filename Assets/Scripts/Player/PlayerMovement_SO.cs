@@ -39,6 +39,7 @@ public class PlayerMovement_SO : ScriptableObject
     [Header("Shield")]
     public float shieldUpTime;
     public float coolDown;
-    public Vector3 startSize;
-    public Vector3 maxSize;
+    public float startSize;
+    public float maxSize;
+    public float scaleSpeed;
 }
