@@ -5,8 +5,11 @@ public class Gun : MonoBehaviour
     [SerializeField] PlayerWeapon_SO gunType;
     [SerializeField] ParticleSystem muzzleFlash;
 
+    int curAmmo;
+
     Camera cam;
     float nextTimeToFire = 0f;
+    PlayerHUD hud;
 
     //Havokk
     FMOD.Studio.EventInstance FireSound;
@@ -14,6 +17,7 @@ public class Gun : MonoBehaviour
     private void Start()
     {
         cam = GetComponentInParent<Camera>();
+        curAmmo = gunType.ammo;
         
         //Havokk
         //Debug.Log(gunType.name);
@@ -22,21 +26,24 @@ public class Gun : MonoBehaviour
 
     private void Update()
     {
-        if (gunType.isAuto)
+        if(curAmmo > 0)
         {
-            if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
+            if (gunType.isAuto)
             {
-                nextTimeToFire = Time.time + 1f / gunType.fireRate;
-                Shoot();
+                if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
+                {
+                    nextTimeToFire = Time.time + 1f / gunType.fireRate;
+                    Shoot();
+                }
             }
-        }
-        else
-        {
-            if (Input.GetButtonDown("Fire1"))
+            else
             {
-                Shoot();
+                if (Input.GetButtonDown("Fire1"))
+                {
+                    Shoot();
+                }
             }
-        }
+        }        
     }
 
     void Shoot()
@@ -71,5 +78,11 @@ public class Gun : MonoBehaviour
             }
             //
         }
+        curAmmo--;
+    }
+
+    public int CurrentAmmo()
+    {
+        return curAmmo;
     }
 }

@@ -8,4 +8,5 @@ public class PlayerWeapon_SO : ScriptableObject
     public float range;
     public bool isAuto;
     public float fireRate;
+    public int ammo;
 }

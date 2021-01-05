@@ -2,11 +2,9 @@
 
 public class WeaponSwitcher : MonoBehaviour
 {
-    [SerializeField] private GameObject[] weapons;
+    public GameObject[] weapons;
 
     [HideInInspector]public int curWeapon;
-
-    int lastCurWeapon;
 
     private void Start()
     {

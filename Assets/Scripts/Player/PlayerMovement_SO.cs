@@ -33,5 +33,12 @@ public class PlayerMovement_SO : ScriptableObject
     [Tooltip("Variable to determine what is the ground to be marked by the user with the defined layer mask")]
     public LayerMask whatIsGround;
 
+    [Header("Health")]
     public int maxHealth;
+
+    [Header("Shield")]
+    public float shieldUpTime;
+    public float coolDown;
+    public Vector3 startSize;
+    public Vector3 maxSize;
 }

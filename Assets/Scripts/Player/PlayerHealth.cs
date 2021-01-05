@@ -28,4 +28,14 @@ public class PlayerHealth : MonoBehaviour
         //currently reloading current scene on death. Replace with actual death system later
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public int CurrentHealth()
+    {
+        return curHealth;
+    }
+
+    public int MaxHealth()
+    {
+        return stats.moveStats.maxHealth;
+    }
 }

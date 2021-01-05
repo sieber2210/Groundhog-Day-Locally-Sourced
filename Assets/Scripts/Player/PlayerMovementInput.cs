@@ -15,7 +15,11 @@ public class PlayerMovementInput : MonoBehaviour
     [Space]
     [Tooltip("Camera to be used as the 'eyes' of the player object")]
     [Header("Camera on Player")]
-    public Transform viewCamera;  //Camera mounted to the player to be used as the "eyes" of the playerpublic
+    public Transform viewCamera;  //Camera mounted to the player to be used as the "eyes" of the player
+    [Space]
+    [Tooltip("Object under player used as the shield")]
+    [Header("Shield on Player")]
+    public GameObject shield;
 
     private CharacterController controller;  //The Character controller component required by this script
     private Rigidbody rb; //Rigidbody component that will be added at start if the user chooses to use rigidbody movement

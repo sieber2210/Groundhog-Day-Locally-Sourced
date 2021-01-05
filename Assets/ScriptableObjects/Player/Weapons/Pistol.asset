@@ -17,3 +17,4 @@ MonoBehaviour:
   range: 60
   isAuto: 0
   fireRate: 0
+  ammo: 35

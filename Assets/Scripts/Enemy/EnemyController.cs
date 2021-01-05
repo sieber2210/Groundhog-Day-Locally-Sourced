@@ -13,7 +13,6 @@ public class EnemyController : MonoBehaviour
 
     public void Attack(GameObject victim)
     {
-        Debug.Log(gameObject.name + " has attacked " + victim.name);
         anim.SetTrigger("Attack");
         PlayerHealth player = victim.GetComponent<PlayerHealth>();
         if(player != null)
