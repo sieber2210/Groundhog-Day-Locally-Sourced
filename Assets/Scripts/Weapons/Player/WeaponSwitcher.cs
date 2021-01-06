@@ -19,17 +19,18 @@ public class WeaponSwitcher : MonoBehaviour
 
     void CheckCurrentWeapon()
     {
-        if (curWeapon == 0)
+        switch (curWeapon)
         {
-            weapons[0].SetActive(true);
-            weapons[1].SetActive(false);
-        }
-        else if (curWeapon == 1)
-        {
-            weapons[0].SetActive(false);
-            weapons[1].SetActive(true);
-        }
+            case 0:
+                weapons[0].SetActive(true);
+                weapons[1].SetActive(false);
+                break;
 
+            case 1:
+                weapons[0].SetActive(false);
+                weapons[1].SetActive(true);
+                break;
+        }
     }
 
     void SwitchWeapon()
