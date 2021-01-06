@@ -42,12 +42,17 @@ public class WeaponSwitcher : MonoBehaviour
         if(scroll > 0f)
         {
             //scroll up
-            curWeapon = 0;
+            if (curWeapon + 1 <= weapons.Length - 1) curWeapon++;
+            else curWeapon = 0;
         }
         else if(scroll < 0f)
         {
             //scroll down
-            curWeapon = 1;
+            if (curWeapon - 1 >= 0) curWeapon--;
+            else curWeapon = weapons.Length - 1;
         }
+
+        if (curWeapon == weapons.Length) curWeapon = 0;
+        if (curWeapon == -1) curWeapon = weapons.Length - 1;
     }
 }
