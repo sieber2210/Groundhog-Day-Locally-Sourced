@@ -22,8 +22,8 @@ public class PlayerShield : MonoBehaviour
         stats = inputObj.moveStats;
         shieldObj = inputObj.shield;
         shieldKeyInput = keyInput;
-
         state = ShieldState.IdleMin;
+        shieldObj.SetActive(false);
     }
 
     private void Update()
@@ -54,6 +54,7 @@ public class PlayerShield : MonoBehaviour
                 scale = shieldObj.transform.localScale;
                 scale = Vector3.Lerp(scale, Vector3.one * stats.startSize, stats.scaleSpeed * Time.deltaTime);
                 shieldObj.transform.localScale = scale;
+
                 if(shieldObj.transform.localScale.x <= stats.startSize + 0.01f)
                 {
                     StartCoroutine(CoolDown());
@@ -67,6 +68,7 @@ public class PlayerShield : MonoBehaviour
 
     void GrowShield()
     {
+        shieldObj.SetActive(true);
         state = ShieldState.Grow;
     }
 
@@ -78,6 +80,7 @@ public class PlayerShield : MonoBehaviour
 
     IEnumerator CoolDown()
     {
+        shieldObj.SetActive(false);
         state = ShieldState.Cooldown;
         yield return new WaitForSeconds(stats.coolDown);
         state = ShieldState.IdleMin;

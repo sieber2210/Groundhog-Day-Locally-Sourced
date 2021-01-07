@@ -27,7 +27,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Update()
     {
-        if(aIState == AIState.Chase || aIState == AIState.Idle)
+        if(aIState == AIState.Chase || aIState == AIState.Idle && stats.anim.GetBool("IsAlive"))
         {
             float speedPercent = agent.velocity.magnitude / agent.speed;
             stats.anim.SetFloat("Locomotion", speedPercent, stats.stats.animationSmoothDamp, Time.deltaTime);
@@ -99,8 +99,6 @@ public class EnemyAI : MonoBehaviour
                 
         if (target != null)
             stats.Attack(target.gameObject);
-        else
-            Debug.LogError(gameObject.name + " has attacked an object not marked as target");
 
         dist = Vector3.Distance(player.position, transform.position);
         if (dist >= stats.stats.attackRange && dist >= stats.stats.perceptionRadius)
