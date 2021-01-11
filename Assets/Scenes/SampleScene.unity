@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1713,11 +1713,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 617898440203345260, guid: dc8d68b68839e2e4c9b91a135fa2458f,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a9cc0c5a1aaf13e43847575b886e400f, type: 2}
     - target: {fileID: 2257045559085831818, guid: dc8d68b68839e2e4c9b91a135fa2458f,
         type: 3}
       propertyPath: m_Name
@@ -1778,10 +1773,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2257045559090120822, guid: dc8d68b68839e2e4c9b91a135fa2458f,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 241be483b3a6d3d4a8001c591902f69b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc8d68b68839e2e4c9b91a135fa2458f, type: 3}

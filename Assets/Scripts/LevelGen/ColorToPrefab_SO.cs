@@ -5,6 +5,5 @@ public class ColorToPrefab_SO : ScriptableObject
 {
     public Color color;
     public GameObject prefab;
-    public bool isPlayer;
     public float ySpawnValue;
 }

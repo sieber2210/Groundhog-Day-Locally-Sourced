@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Wall
   m_EditorClassIdentifier: 
   color: {r: 1, g: 1, b: 0, a: 1}
-  prefab: {fileID: 6931552822078592449, guid: f837c4fca8a3e0e42890fc67c1b1846f, type: 3}
-  ySpawnValue: 3.5
+  prefab: {fileID: 6638951072048165032, guid: 8fd74849aa90f7041870720bd69af781, type: 3}
+  ySpawnValue: 3

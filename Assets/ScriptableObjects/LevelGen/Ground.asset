@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Ground
   m_EditorClassIdentifier: 
   color: {r: 0, g: 0, b: 0, a: 1}
-  prefab: {fileID: 2512423430811522922, guid: 32741076989e59a43b6a18340d6f1728, type: 3}
+  prefab: {fileID: 8125220047987454418, guid: 4c774ccb36270434caf72b6a59424109, type: 3}
+  isPlayer: 0
   ySpawnValue: 1
