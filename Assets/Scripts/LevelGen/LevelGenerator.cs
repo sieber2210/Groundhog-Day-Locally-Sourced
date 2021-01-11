@@ -3,6 +3,7 @@
 public class LevelGenerator : MonoBehaviour
 {
     public Level_SO levelObject;
+    public PlayerHUD playerHUD;
 
     private void Start()
     {
@@ -36,7 +37,13 @@ public class LevelGenerator : MonoBehaviour
             if (colorPrefab.color.Equals(pixelColor))
             {
                 Vector3 pos = new Vector3(x * 10f, colorPrefab.ySpawnValue, z * 10f);
-                Instantiate(colorPrefab.prefab, pos, Quaternion.identity, transform);
+                GameObject go = Instantiate(colorPrefab.prefab, pos, Quaternion.identity, transform);
+                if (go.CompareTag("Player"))
+                {
+                    playerHUD.player = go;
+                    go.transform.parent = null;
+                    playerHUD.playerSet = true;
+                }
             }            
         }
     }

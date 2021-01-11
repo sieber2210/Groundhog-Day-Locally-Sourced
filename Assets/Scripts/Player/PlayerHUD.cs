@@ -12,21 +12,32 @@ public class PlayerHUD : MonoBehaviour
     PlayerHealth health;
     WeaponSwitcher switcher;
     List<Gun> guns = new List<Gun>();
+    [HideInInspector] public bool playerSet = false;
+    bool otherSet = false;
 
     private void Start()
     {
-        health = player.GetComponent<PlayerHealth>();
-        switcher = player.GetComponentInChildren<WeaponSwitcher>();
-        for (int i = 0; i < switcher.weapons.Length; i++)
-        {
-            guns.Add(switcher.weapons[i].GetComponent<Gun>());
-        }
+        otherSet = false;
     }
 
     private void Update()
     {
-        HealthCheck();
-        AmmoCheck();
+        if (playerSet && !otherSet)
+        {
+            health = player.GetComponent<PlayerHealth>();
+            switcher = player.GetComponentInChildren<WeaponSwitcher>();
+            for (int i = 0; i < switcher.weapons.Length; i++)
+            {
+                guns.Add(switcher.weapons[i].GetComponent<Gun>());
+            }
+            otherSet = true;
+        }
+
+        if (player != null)
+        {
+            HealthCheck();
+            AmmoCheck();
+        }
     }
 
     void HealthCheck()
