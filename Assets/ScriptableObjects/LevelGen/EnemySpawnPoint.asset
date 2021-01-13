@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3162cfa43e3b6064f9d87c1ff7922065, type: 3}
-  m_Name: Ground
+  m_Name: EnemySpawnPoint
   m_EditorClassIdentifier: 
   color:
     serializedVersion: 2
-    rgba: 4278190080
-  prefab: {fileID: 8125220047987454418, guid: 4c774ccb36270434caf72b6a59424109, type: 3}
-  ySpawnValue: 0
+    rgba: 4278190335
+  prefab: {fileID: 4845750417854022744, guid: d726fe476f2ccb44daf246b0fadc9a5c, type: 3}
+  ySpawnValue: 1

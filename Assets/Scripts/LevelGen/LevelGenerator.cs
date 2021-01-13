@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.AI;
 
 public class LevelGenerator : MonoBehaviour
 {
     public Level_SO levelObject;
     public PlayerHUD playerHUD;
+    public Spawn_Manager spawner;
+    public NavMeshSurface nav;
 
     private void Start()
     {
@@ -22,11 +25,13 @@ public class LevelGenerator : MonoBehaviour
                 }
             }
         }
+        spawner.SetCanSpawn();
+        nav.BuildNavMesh();
     }
 
     void GenerateTile(int x, int z, int index)
     {
-        Color pixelColor = levelObject.maps[index].GetPixel(x, z);
+        Color32 pixelColor = levelObject.maps[index].GetPixel(x, z);
         if(pixelColor.a == 0f)
         {
             return;
@@ -43,6 +48,12 @@ public class LevelGenerator : MonoBehaviour
                     playerHUD.player = go;
                     go.transform.parent = null;
                     playerHUD.playerSet = true;
+                }
+                else if (go.CompareTag("EnemySpawnPoint"))
+                {
+                    spawner.AddToSpawnPoints(go.transform);
+                    go.transform.parent = null;
+                    go.transform.parent = spawner.transform;
                 }
             }            
         }

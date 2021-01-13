@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3162cfa43e3b6064f9d87c1ff7922065, type: 3}
   m_Name: Wall
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 0, a: 1}
+  color:
+    serializedVersion: 2
+    rgba: 4278255615
   prefab: {fileID: 6638951072048165032, guid: 8fd74849aa90f7041870720bd69af781, type: 3}
-  ySpawnValue: 3
+  ySpawnValue: 2
