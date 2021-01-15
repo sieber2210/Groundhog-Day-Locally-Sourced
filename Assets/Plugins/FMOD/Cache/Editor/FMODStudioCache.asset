@@ -223,7 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: GroundhogFMOD/Build/Desktop/Master.bank
   Name: Master
-  lastModified: 637449579600000000
+  lastModified: 637435832100869290
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -335,7 +335,7 @@ MonoBehaviour:
   - {fileID: -4910404851882516937}
   StringsBanks:
   - {fileID: 7354150644799842962}
-  stringsBankWriteTime: 637449579600000000
+  stringsBankWriteTime: 637435832100909331
   cacheVersion: 5
 --- !u!114 &142581908333958667
 MonoBehaviour:
@@ -727,11 +727,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: GroundhogFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637449579600000000
+  lastModified: 637435832100909331
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 1106
+  Exists: 1
+--- !u!114 &8381157884854397500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTest/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
   Exists: 1
 --- !u!114 &8467013092724852232
 MonoBehaviour:
@@ -773,7 +793,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 4183489785930076915}
+  - {fileID: 8381157884854397500}
   MinDistance: 1
   MaxDistance: 75
   Length: 46080
