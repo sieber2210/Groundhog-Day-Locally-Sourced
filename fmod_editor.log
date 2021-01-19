@@ -2,20 +2,339 @@
 [LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
 [LOG] SystemI::init                            : Initialize version=20105 (112138), maxchannels=256, flags=0x00020000
 [LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=8, nSamplesPerSec=48000, nAvgBytesPerSec=1536000, nBlockAlign=32, wBitsPerSample=32, cbSize=22.
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x0000063F, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
-[LOG] DownMix::init                            : dspbuffersize: 1024  rate: 48000. output speaker mode: 7, input speaker mode 3
-[LOG] DownMix::init                            : done.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001732BA3F3F8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001FDFECB9F48 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3541184
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 21152
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000348484F438
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC6D717E30
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC6D717E00
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC6D717F00
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC6D717FC0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001FD484F4788
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Monster Within - Hunter - Foley_Hit02', format=5, channels=2, frequency=48000, lengthbytes=9888, lengthpcm=36571, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3541184
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 21152
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000348484F438
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC6D717E30
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC6D717E00
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC6D717F00
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC6D717FC0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001FD484F4788
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Monster Within - Hunter - Fley_Hit02', format=5, channels=2, frequency=48000, lengthbytes=9888, lengthpcm=36571, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3541184
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 21152
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000348484F438
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC6D717E30
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC6D717E00
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC6D717F00
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC6D717FC0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001FD484F4788
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Monster Within - Hunter - Fley_Hit03', format=5, channels=2, frequency=48000, lengthbytes=10144, lengthpcm=35619, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3541184
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 21152
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000348484F438
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC6D717E30
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC6D717E00
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC6D717F00
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC6D717FC0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001FD484F4788
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Monster Within - Hunter - Foley_Hit03', format=5, channels=2, frequency=48000, lengthbytes=10144, lengthpcm=35619, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3541184
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 21152
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000348484F438
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC6D717E30
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC6D717E00
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC6D717F00
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC6D717FC0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001FD484F4788
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Monster Within - Bearer - Vocal_Pain02', format=5, channels=2, frequency=48000, lengthbytes=19776, lengthpcm=89516, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968590.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3541184
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 21152
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000348484F438
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC6D717E30
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC6D717E00
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC6D717F00
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC6D717FC0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001FD484F4788
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Monster Within - Hunter - Foley_Hit01', format=5, channels=2, frequency=48000, lengthbytes=9088, lengthpcm=30435, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3541184
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 21152
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000348484F438
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC6D717E30
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC6D717E00
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC6D717F00
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC6D717FC0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001FD484F4788
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Monster Within - Bearer - Vocal_Pain03', format=5, channels=2, frequency=48000, lengthbytes=16704, lengthpcm=73951, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.969738.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3541184
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 21152
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000348484F438
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC6D717E30
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC6D717E00
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC6D717F00
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC6D717FC0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001FD484F4788
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Monster Within - Bearer - Vocal_Pain01', format=5, channels=2, frequency=48000, lengthbytes=20576, lengthpcm=86111, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.969034.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3541184
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 21152
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000348484F438
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC6D717E30
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC6D717E00
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC6D717F00
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC6D717FC0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001FD484F4788
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Monster Within - Hunter - Fley_Hit01', format=5, channels=2, frequency=48000, lengthbytes=9088, lengthpcm=30435, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3541184
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 21152
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000348484F438
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC6D717E30
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC6D717E00
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC6D717F00
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC6D717FC0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001FD484F3B28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Monster Within - Expector - Death02', format=5, channels=2, frequency=48000, lengthbytes=12672, lengthpcm=50741, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3541184
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 21152
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000348484F438
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC6D717E30
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC6D717E00
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC6D717F00
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC6D717FC0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001FD484F3B28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Monster Within - Excavator_Death_02', format=5, channels=2, frequency=48000, lengthbytes=8320, lengthpcm=38110, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.993273.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3541184
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 21152
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000348484F438
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC6D717E30
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC6D717E00
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC6D717F00
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC6D717FC0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001FD484F34F8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GroundHogGuns_2 - Track 6', format=5, channels=2, frequency=48000, lengthbytes=2464, lengthpcm=22500, pcmblocksize=0, loopstart=0, loopend=21590, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.975093.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3541184
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 21152
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000348484F438
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC6D717E30
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC6D717E00
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC6D717F00
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC6D717FC0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001FD484F34F8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GroundHogGuns_2 - Track 4', format=5, channels=2, frequency=48000, lengthbytes=4064, lengthpcm=21363, pcmblocksize=0, loopstart=0, loopend=20453, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.700121.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3541184
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 21152
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000348484F438
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC6D717E30
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC6D717E00
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC6D717F00
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC6D717FC0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001FD484F34F8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='PlayerHurt2', format=5, channels=2, frequency=48000, lengthbytes=3616, lengthpcm=31590, pcmblocksize=0, loopstart=0, loopend=31135, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.975027.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3541184
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 21152
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000348484F438
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC6D717E30
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC6D717E00
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC6D717F00
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC6D717FC0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001FD484F34F8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GroundHogGuns_2 - Track 2', format=5, channels=2, frequency=48000, lengthbytes=6848, lengthpcm=26136, pcmblocksize=0, loopstart=0, loopend=25226, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.975162.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SoundI::release                          :  (000001FD4BB98658)
+[LOG] SoundI::release                          :     GroundHogGuns_2 - Track 2 (000001FD4ECCC948)
+[LOG] SoundI::release                          :  (000001FD4BB9D3F8)
+[LOG] SoundI::release                          :     GroundHogGuns_2 - Track 4 (000001FD4ECCBDE8)
+[LOG] SoundI::release                          :  (000001FD4BB9D118)
+[LOG] SoundI::release                          :     GroundHogGuns_2 - Track 6 (000001FD4ECCB5C8)
+[LOG] SoundI::release                          : SongDraft (000001FB40A4E268)
+[LOG] SoundI::release                          :     SongDraft (000001FD288BCC78)
+[LOG] SoundI::release                          :     SongDraft (000001FE257CA9A8)
+[LOG] SoundI::release                          :  (000001FD4BB9B8A8)
+[LOG] SoundI::release                          :     PlayerHurt2 (000001FD4ECCBF88)
+[LOG] SoundI::release                          :  (000001FD4BB984E8)
+[LOG] SoundI::release                          :     Monster Within - Expector - Death02 (000001FD4ECCE008)
+[LOG] SoundI::release                          :  (000001FD4BB9CE38)
+[LOG] SoundI::release                          :     Monster Within - Excavator_Death_02 (000001FD4ECCE1A8)
+[LOG] SoundI::release                          :  (000001FD4BB98208)
+[LOG] SoundI::release                          :     Monster Within - Hunter - Fley_Hit01 (000001FD4ECCB768)
+[LOG] SoundI::release                          :  (000001FD4BB9BE68)
+[LOG] SoundI::release                          :     Monster Within - Hunter - Fley_Hit02 (000001FCE1912448)
+[LOG] SoundI::release                          :  (000001FD4BB9C598)
+[LOG] SoundI::release                          :     Monster Within - Hunter - Fley_Hit03 (000001FCE1913488)
+[LOG] SoundI::release                          :  (000001FD4BB9C9E8)
+[LOG] SoundI::release                          :     Monster Within - Hunter - Foley_Hit01 (000001FCE1911A88)
+[LOG] SoundI::release                          :  (000001FD4BB9ABB8)
+[LOG] SoundI::release                          :     Monster Within - Hunter - Foley_Hit02 (000001FCE1912C68)
+[LOG] SoundI::release                          :  (000001FD4BB9D288)
+[LOG] SoundI::release                          :     Monster Within - Hunter - Foley_Hit03 (000001FCE1913148)
+[LOG] SoundI::release                          :  (000001FD4BB9CB58)
+[LOG] SoundI::release                          :     Monster Within - Bearer - Vocal_Pain01 (000001FD4ECCB288)
+[LOG] SoundI::release                          :  (000001FD4BB9B458)
+[LOG] SoundI::release                          :     Monster Within - Bearer - Vocal_Pain02 (000001FCE19132E8)
+[LOG] SoundI::release                          :  (000001FD4BB9B008)
+[LOG] SoundI::release                          :     Monster Within - Bearer - Vocal_Pain03 (000001FCE1911F68)
+[LOG] SoundI::release                          :  (000001FE20458038)
+[LOG] SoundI::release                          :     GroundHogGuns - Track 2 (000001FD288BBC38)
+[LOG] SoundI::release                          :  (000001FE20457908)
+[LOG] SoundI::release                          :     GroundHogGuns - Track 5 (000001FD288BBA98)
+[LOG] SoundI::release                          :  (000001FE20457A78)
+[LOG] SoundI::release                          :     GroundHogGuns - Track 6 (000001FD288BCE18)
+[LOG] SoundI::release                          :  (000001FE20457BE8)
+[LOG] SoundI::release                          :     GroundHogGuns - Track 1 (000001FD288BC938)
+[LOG] SoundI::release                          :  (000001FE204581A8)
+[LOG] SoundI::release                          :     GroundHogGuns - Track 7 (000001FD288BCAD8)
+[LOG] SoundI::release                          :  (000001FE20457798)
+[LOG] SoundI::release                          :     GroundHogGuns - Track 3 (000001FD288BC2B8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
@@ -27,3 +346,5 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] SystemI::close                           : Closed.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.

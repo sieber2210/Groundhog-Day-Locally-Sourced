@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{6caaabb4-124d-4469-8408-3fbb516f7edb}">
+		<property name="assetPath">
+			<value>Player/GroundHogGuns_2 - Track 2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.54451247165532879</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{21890f59-691b-4060-90f2-2d287bf7bd30}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -22,7 +22,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1725
+  Length: 3536
 --- !u!114 &-8701172617140079910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,6 +107,26 @@ MonoBehaviour:
     data2: 0
   Exists: 1
 --- !u!114 &-5964426004052928126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTest/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &-5923155434233445910
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -223,10 +243,90 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: GroundhogFMOD/Build/Desktop/Master.bank
   Name: Master
-  lastModified: 637435832100869290
+  lastModified: 637466032900000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-4110093571329278118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTest/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &-3521444572361950316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTest/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &-2917072667887047976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTest/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &-2736426630898233365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTest/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &-1333267262042246442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,6 +387,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-708392784309166966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTest/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &-640313614436652927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,6 +420,26 @@ MonoBehaviour:
   m_Name: parameter:/MusicTest/Volume
   m_EditorClassIdentifier: 
   Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &-265102786211935442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTest/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
   Min: 0
   Max: 1
   Default: 0
@@ -330,12 +470,14 @@ MonoBehaviour:
   - {fileID: 626889240291310748}
   - {fileID: 8774269205315382728}
   - {fileID: 142581908333958667}
+  - {fileID: 6805185948540122654}
+  - {fileID: 6718981722698505942}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4910404851882516937}
   StringsBanks:
   - {fileID: 7354150644799842962}
-  stringsBankWriteTime: 637435832100909331
+  stringsBankWriteTime: 637466032900000000
   cacheVersion: 5
 --- !u!114 &142581908333958667
 MonoBehaviour:
@@ -426,6 +568,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1801
+--- !u!114 &1223351822089371454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTest/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &2132300704107863693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -461,6 +623,46 @@ MonoBehaviour:
   m_Name: parameter:/MusicTest/Volume
   m_EditorClassIdentifier: 
   Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &2684263562964071988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTest/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &3046892795323467170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTest/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
   Min: 0
   Max: 1
   Default: 0
@@ -521,6 +723,26 @@ MonoBehaviour:
   m_Name: parameter:/MusicTest/LPF
   m_EditorClassIdentifier: 
   Name: LPF
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &4016828909525993951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTest/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
   Min: 0
   Max: 1
   Default: 0
@@ -653,6 +875,49 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &6622004319889232089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTest/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &6718981722698505942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music
+  guid: 9b8c7e2bc610064086f82452cd4bde60
+  Banks:
+  - {fileID: -4910404851882516937}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 176924
 --- !u!114 &6778547484782229933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -693,6 +958,29 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &6805185948540122654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlayerDamage
+  m_EditorClassIdentifier: 
+  Path: event:/PlayerDamage
+  guid: b28c851b622a6845aae2fc53ac7df1e7
+  Banks:
+  - {fileID: -4910404851882516937}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 658
 --- !u!114 &6829642805596779146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -727,12 +1015,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: GroundhogFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637435832100909331
+  lastModified: 637466032900000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1106
+    Value: 1190
   Exists: 1
+--- !u!114 &7894746470352511167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTest/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &8381157884854397500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -773,6 +1081,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &8763440265014575940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTest/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &8774269205315382728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -793,7 +1121,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 8381157884854397500}
+  - {fileID: 1223351822089371454}
   MinDistance: 1
   MaxDistance: 75
   Length: 46080

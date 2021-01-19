@@ -19,6 +19,9 @@ public class PlayerHealth : MonoBehaviour
         curHealth -= amount;
         if (curHealth <= 0)
             StartCoroutine(Die());
+
+        //Havokk
+        FMODUnity.RuntimeManager.PlayOneShot("event:/PlayerDamage", transform.position);
     }
 
     IEnumerator Die()
