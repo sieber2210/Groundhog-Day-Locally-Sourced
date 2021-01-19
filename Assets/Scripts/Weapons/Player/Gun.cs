@@ -71,12 +71,14 @@ public class Gun : MonoBehaviour
             }
 
             //Havokk
-            Boom radio = hit.transform.GetComponent<Boom>();
-            if(radio != null)
+            Radio radio = hit.transform.GetComponent<Radio>();
+            if (radio != null)
             {
+                Debug.Log("RADIO");
                 radio.TakeDamage(gunType.damage);
             }
-            //
+
+
         }
         curAmmo--;
     }
