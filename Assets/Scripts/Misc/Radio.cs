@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
+using FMOD.Studio;
+using FMODUnity;
 
 public class Radio : MonoBehaviour
 {
     Animator anim;
     int curHealth;
-    FMOD.Studio.EventInstance radioSound;
+    EventInstance radioSound;
 
     public void OnEnable()
     {
@@ -13,7 +15,7 @@ public class Radio : MonoBehaviour
 
     public void Start()
     {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/RadioSound", transform.position);
+        RuntimeManager.PlayOneShot("event:/RadioSound", transform.position);
         curHealth = 1;
         anim = GetComponent<Animator>();
         //radioSound.start();
@@ -36,7 +38,7 @@ public class Radio : MonoBehaviour
     public void BreakRadio()
     {
         anim.SetTrigger("Break");
-        FMODUnity.RuntimeManager.PlayOneShot("event:/RadioDestroy", transform.position);
+        RuntimeManager.PlayOneShot("event:/RadioDestroy", transform.position);
         radioSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
     }
 
@@ -44,7 +46,7 @@ public class Radio : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.B)) BreakRadio();
-        Debug.Log(curHealth);
+        //Debug.Log(curHealth);
     }
 #endif
 }
