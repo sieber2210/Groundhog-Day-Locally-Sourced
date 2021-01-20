@@ -14,7 +14,7 @@ public class PlayerShield : MonoBehaviour
     PlayerMovementInput inputObj;
     PlayerMovement_SO stats;
     GameObject shieldObj;
-    ShieldState state;
+    ShieldState state;    
 
     private void Start()
     {
