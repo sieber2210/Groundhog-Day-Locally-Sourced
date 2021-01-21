@@ -10,12 +10,18 @@ public class EnemyController : MonoBehaviour
     NavMeshAgent agent;
     EnemyAI ai;
 
+    //Havokk
+    FMOD.Studio.EventInstance swipe;
+
     private void Awake()
     {
         anim = GetComponentInChildren<Animator>();
         col = GetComponent<Collider>();
         agent = GetComponent<NavMeshAgent>();
         ai = GetComponent<EnemyAI>();
+
+        //Havokk
+        swipe = FMODUnity.RuntimeManager.CreateInstance("event:/attack");
     }
 
     public void Attack(GameObject victim)
@@ -26,6 +32,11 @@ public class EnemyController : MonoBehaviour
         {
             player.TakeDamage(stats.damage);
         }
+
+        //Havokk
+        //swipe.start();
+        //swipe.release();
+        FMODUnity.RuntimeManager.PlayOneShot("event:/attack", gameObject.transform.position);
     }
 
     public void Death()
