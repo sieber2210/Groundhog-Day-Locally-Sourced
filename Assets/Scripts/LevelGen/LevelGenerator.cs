@@ -41,7 +41,7 @@ public class LevelGenerator : MonoBehaviour
         {
             if (colorPrefab.color.Equals(pixelColor))
             {
-                Vector3 pos = new Vector3(x * 10f, colorPrefab.ySpawnValue, z * 10f);
+                Vector3 pos = new Vector3(x * 10f, levelObject.ySpawns[index] + colorPrefab.ySpawnValue, z * 10f);
                 GameObject go = Instantiate(colorPrefab.prefab, pos, Quaternion.identity, transform);
                 if (go.CompareTag("Player"))
                 {

@@ -5,4 +5,5 @@ public class Level_SO : ScriptableObject
 {
     public Texture2D[] maps;
     public ColorToPrefab_SO[] colorToPrefabs;
+    public int[] ySpawns;
 }

@@ -20,7 +20,7 @@ MonoBehaviour:
   sprintSpeed: 14
   lookSpeed: 100
   lookRange: 60
-  jumpForce: 5
+  jumpForce: 2.5
   gravity: -19.62
   groundCheckRadius: 0.25
   whatIsGround:
