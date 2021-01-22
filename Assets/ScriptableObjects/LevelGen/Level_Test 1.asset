@@ -15,7 +15,7 @@ MonoBehaviour:
   maps:
   - {fileID: 2800000, guid: 0e329a9a27c77b041847ce275c583eba, type: 3}
   - {fileID: 2800000, guid: 363d07d95ec75cd468f5ccdee776fadd, type: 3}
-  - {fileID: 2800000, guid: 21d9dbf1dcf155b428ea51d32ac79ed3, type: 3}
+  - {fileID: 2800000, guid: 615a3055ec8005c408e050dea59253e4, type: 3}
   colorToPrefabs:
   - {fileID: 11400000, guid: cb7720ed239f80945b9568521882875c, type: 2}
   - {fileID: 11400000, guid: 934a7ce6076c590418a607e929b9e5ac, type: 2}
