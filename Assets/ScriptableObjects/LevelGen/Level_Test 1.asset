@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level_Test 1
   m_EditorClassIdentifier: 
   maps:
-  - {fileID: 2800000, guid: ec459236581c5724b8673aef40184ff9, type: 3}
+  - {fileID: 2800000, guid: 0e329a9a27c77b041847ce275c583eba, type: 3}
   - {fileID: 2800000, guid: 363d07d95ec75cd468f5ccdee776fadd, type: 3}
   - {fileID: 2800000, guid: 21d9dbf1dcf155b428ea51d32ac79ed3, type: 3}
   colorToPrefabs:
@@ -21,4 +21,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 934a7ce6076c590418a607e929b9e5ac, type: 2}
   - {fileID: 11400000, guid: da9e54b5c802e3349a16e5a66775171c, type: 2}
   - {fileID: 11400000, guid: 5b2483e930343754485fa5f337359c68, type: 2}
+  - {fileID: 11400000, guid: 03aaa290d9381324294db1702c30f919, type: 2}
   ySpawns: 000000000000000004000000
