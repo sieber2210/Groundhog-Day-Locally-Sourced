@@ -6,7 +6,9 @@ public class Radio : MonoBehaviour
 {
     Animator anim;
     int curHealth;
-    EventInstance radioSound;
+    //EventInstance radioSound;
+
+    public GameObject radioSound;
 
     public void OnEnable()
     {
@@ -15,7 +17,7 @@ public class Radio : MonoBehaviour
 
     public void Start()
     {
-        RuntimeManager.PlayOneShot("event:/RadioSound", transform.position);
+        //RuntimeManager.PlayOneShot("event:/RadioSound", transform.position);
         curHealth = 1;
         anim = GetComponent<Animator>();
         //radioSound.start();
@@ -39,7 +41,8 @@ public class Radio : MonoBehaviour
     {
         anim.SetTrigger("Break");
         RuntimeManager.PlayOneShot("event:/RadioDestroy", transform.position);
-        radioSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        //radioSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        radioSound.SetActive (false);
     }
 
 #if UNITY_EDITOR
