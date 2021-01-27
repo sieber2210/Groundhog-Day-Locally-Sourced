@@ -449,11 +449,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnerSystem
       objectReference: {fileID: 0}
-    - target: {fileID: 7410336975606046531, guid: c2a051944ae5c904dab5a7ee70343c88,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7410336975606046556, guid: c2a051944ae5c904dab5a7ee70343c88,
         type: 3}
       propertyPath: m_RootOrder
@@ -517,28 +512,10 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1851310960}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1851310962}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40a0328817f5f2e44a5dffc99d0b1128, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1851310962 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7410336975606046531, guid: c2a051944ae5c904dab5a7ee70343c88,
-    type: 3}
-  m_PrefabInstance: {fileID: 1851310960}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1851310963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1851310962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3d6c13ac0978e54ab3c3938bb9f90dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1968271495020166763

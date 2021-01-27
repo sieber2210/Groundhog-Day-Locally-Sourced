@@ -26,6 +26,7 @@ public class EnemyHealth : MonoBehaviour
 
     void Die()
     {
+        EnemyCounter.EnemyCount--;
         enemyStats.Death();
         enemyStats.anim.SetBool("IsAlive", false);
         enemyStats.anim.SetTrigger("Death");
