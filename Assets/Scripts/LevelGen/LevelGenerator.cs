@@ -55,6 +55,10 @@ public class LevelGenerator : MonoBehaviour
                     go.transform.parent = null;
                     go.transform.parent = spawner.transform;
                 }
+                else if (go.CompareTag("Ramp"))
+                {
+                    go.GetComponent<RampRotationCheck>().AllowRotation();
+                }
             }            
         }
     }
