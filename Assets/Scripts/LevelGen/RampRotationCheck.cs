@@ -2,12 +2,7 @@
 
 public class RampRotationCheck : MonoBehaviour
 {
-    Collider col;
-
-    private void Start()
-    {
-        col = GetComponent<Collider>();
-    }
+    public Collider col;
 
     private void OnTriggerEnter(Collider other)
     {
