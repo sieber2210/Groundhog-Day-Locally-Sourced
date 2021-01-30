@@ -7,13 +7,125 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000255E7219178 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000255E7220F18 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4175520
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26240
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A624CAF558
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC81BD7E30
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC81BD7E00
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC81BD7F00
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC81BD7FC0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000255C5504298
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GroundHogGuns_2 - Track 6', format=5, channels=2, frequency=48000, lengthbytes=2464, lengthpcm=22500, pcmblocksize=0, loopstart=0, loopend=21590, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.975093.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4175520
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26240
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A624CAF558
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC81BD7E30
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC81BD7E00
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC81BD7F00
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC81BD7FC0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000255C5504298
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GroundHogGuns_2 - Track 4', format=5, channels=2, frequency=48000, lengthbytes=4064, lengthpcm=21363, pcmblocksize=0, loopstart=0, loopend=20453, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.700121.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4175520
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26240
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A624CAF558
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC81BD7E30
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC81BD7E00
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC81BD7F00
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC81BD7FC0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000255C5504298
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='PlayerHurt2', format=5, channels=2, frequency=48000, lengthbytes=3616, lengthpcm=31590, pcmblocksize=0, loopstart=0, loopend=31135, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.975027.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4175520
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26240
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A624CAF558
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC81BD7E30
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC81BD7E00
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC81BD7F00
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC81BD7FC0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000255C5504298
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GroundHogGuns_2 - Track 2', format=5, channels=2, frequency=48000, lengthbytes=6848, lengthpcm=26136, pcmblocksize=0, loopstart=0, loopend=25226, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.975162.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SoundI::release                          : SongDraft (00000255F2B0DFE8)
+[LOG] SoundI::release                          :     SongDraft (00000255E3A8DDC8)
+[LOG] SoundI::release                          :     SongDraft (00000255F2B0EF18)
+[LOG] SoundI::release                          : RadioDraft (00000255F2B0D268)
+[LOG] SoundI::release                          :     RadioDraft (00000255E3A8DC28)
+[LOG] SoundI::release                          :     RadioDraft (00000255F2B0D418)
+[LOG] SoundI::release                          : RadioDraft (00000255F2B0D0B8)
+[LOG] SoundI::release                          :     RadioDraft (00000255E3A8C708)
+[LOG] SoundI::release                          :     RadioDraft (00000255F2B0ED68)
+[LOG] SoundI::release                          :  (00000255E39823E8)
+[LOG] SoundI::release                          :     GroundHogGuns_2 - Track 2 (00000255C8EEC9A8)
+[LOG] SoundI::release                          :  (00000255E3981E28)
+[LOG] SoundI::release                          :     GroundHogGuns_2 - Track 4 (00000255C8EEAFA8)
+[LOG] SoundI::release                          :  (00000255E3982F68)
+[LOG] SoundI::release                          :     GroundHogGuns_2 - Track 6 (00000255C8EE9A88)
+[LOG] SoundI::release                          :  (00000255E3983698)
+[LOG] SoundI::release                          :     PlayerHurt2 (00000255C8EEB628)
+[LOG] SoundI::release                          :  (00000255E7A91F88)
+[LOG] SoundI::release                          :     GroundHogGuns - Track 2 (00000255E3A90808)
+[LOG] SoundI::release                          :  (00000255E7A916E8)
+[LOG] SoundI::release                          :     GroundHogGuns - Track 5 (00000255E3A8C8A8)
+[LOG] SoundI::release                          :  (00000255E7A8D078)
+[LOG] SoundI::release                          :     GroundHogGuns - Track 6 (00000255E3A8FE48)
+[LOG] SoundI::release                          :  (00000255E7A8D638)
+[LOG] SoundI::release                          :     GroundHogGuns - Track 1 (00000255E3A8DA88)
+[LOG] SoundI::release                          :  (00000255E7A8E328)
+[LOG] SoundI::release                          :     GroundHogGuns - Track 7 (00000255E3A8D8E8)
+[LOG] SoundI::release                          :  (00000255E7A8DBF8)
+[LOG] SoundI::release                          :     GroundHogGuns - Track 3 (00000255E3A90188)
+[LOG] SoundI::release                          :  (00000255E7A8FA28)
+[LOG] SoundI::release                          :     Swipe (00000255E3A90668)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
@@ -21,3 +133,5 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] SystemI::close                           : Closed.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
