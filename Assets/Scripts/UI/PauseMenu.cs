@@ -7,6 +7,8 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseScreen;
 
+    //Havokk
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -22,6 +24,8 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         isPaused = false;
         Cursor.lockState = CursorLockMode.Locked;
+
+        //Havokk
     }
 
     void Pause()
@@ -30,6 +34,8 @@ public class PauseMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 0f;
         isPaused = true;
+
+        //Havokk
     }
 
     public void LoadMenu(int menuIndex)
@@ -41,4 +47,8 @@ public class PauseMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    
+
+
 }
