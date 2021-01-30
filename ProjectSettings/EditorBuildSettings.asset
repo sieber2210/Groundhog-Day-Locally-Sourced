@@ -4,5 +4,44 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/MainMenu.unity
+    guid: 12701f75b269b9c4cb997086aa0625ef
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Level_00.unity
+    guid: 8a82abfcb64419e4a80464ec21c367aa
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Level_01.unity
+    guid: 6db4e6b8157cca74ca69ce786cbf574c
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Level_02.unity
+    guid: f4bd35ec16f26e44e9cb7a63d8bdf286
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Level_03.unity
+    guid: a3d1de4502f000a41abdfad6a60ab28f
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Level_04.unity
+    guid: ed77003ea6fb83e409bda13d37af5fee
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Level_05.unity
+    guid: 70f9d1d9c9d0196419fc46dc69d5be08
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Level_06.unity
+    guid: 123f90cdd7f5481409229087c2345291
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Level_07.unity
+    guid: f322e100cd5ef7d488a4d9bb11678ed7
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Level_08.unity
+    guid: 97f0ccf430d74b243a77da33205b609e
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Level_09.unity
+    guid: 6698da536f08e0a4fb423b4bfc2ef52c
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Win.unity
+    guid: 74e118c1ebfac0b4fb20e0c7fe1b58d5
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Lose.unity
+    guid: c0c29ecba5754a740bd09415d5aac701
   m_configObjects: {}

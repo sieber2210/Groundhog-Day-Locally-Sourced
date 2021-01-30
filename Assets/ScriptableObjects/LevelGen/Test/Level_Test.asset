@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3933546b345fc9e4b968e4b838fc5e53, type: 3}
+  m_Name: Level_Test
+  m_EditorClassIdentifier: 
+  maps:
+  - {fileID: 2800000, guid: c119b94061f63514cb5b11a6fbf7f3cf, type: 3}
+  - {fileID: 2800000, guid: fedcf2d8b5f692542a4a9b0b7bc4aaa1, type: 3}
+  colorToPrefabs:
+  - {fileID: 11400000, guid: cb7720ed239f80945b9568521882875c, type: 2}
+  - {fileID: 11400000, guid: 934a7ce6076c590418a607e929b9e5ac, type: 2}
+  - {fileID: 11400000, guid: da9e54b5c802e3349a16e5a66775171c, type: 2}
+  ySpawns: 
