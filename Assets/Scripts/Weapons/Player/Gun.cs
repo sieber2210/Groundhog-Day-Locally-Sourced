@@ -9,7 +9,6 @@ public class Gun : MonoBehaviour
 
     Camera cam;
     float nextTimeToFire = 0f;
-    PlayerHUD hud;
 
     //Havokk
     public FMOD.Studio.EventInstance FireSound;
@@ -86,5 +85,11 @@ public class Gun : MonoBehaviour
     public int CurrentAmmo()
     {
         return curAmmo;
+    }
+
+    public void AddAmmo(int amount)
+    {
+        curAmmo += amount;
+        if (curAmmo >= gunType.ammo) curAmmo = gunType.ammo;
     }
 }

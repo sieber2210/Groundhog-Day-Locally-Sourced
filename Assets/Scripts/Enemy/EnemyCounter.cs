@@ -26,7 +26,7 @@ public class EnemyCounter : MonoBehaviour
     IEnumerator NextLevelCountDown()
     {
         yield return new WaitForSeconds(nextLevelDelay);
-        if(SceneManager.GetActiveScene().buildIndex <= 10)
-            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        if(SceneManager.GetActiveScene().buildIndex <= 5)
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

@@ -24,6 +24,12 @@ public class PlayerHealth : MonoBehaviour
         FMODUnity.RuntimeManager.PlayOneShot("event:/PlayerDamage", transform.position);
     }
 
+    public void AddHealth(int amount)
+    {
+        curHealth += amount;
+        if (curHealth >= MaxHealth()) curHealth = MaxHealth();
+    }
+
     IEnumerator Die()
     {
         Debug.Log("Player has died!");

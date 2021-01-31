@@ -12,11 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3933546b345fc9e4b968e4b838fc5e53, type: 3}
   m_Name: Level03
   m_EditorClassIdentifier: 
-  maps: []
+  maps:
+  - {fileID: 2800000, guid: 16f995e6c2d0072479b25c46457d0328, type: 3}
+  - {fileID: 2800000, guid: c9d32c4fd403de441847cb2ab1e06826, type: 3}
   colorToPrefabs:
   - {fileID: 11400000, guid: cb7720ed239f80945b9568521882875c, type: 2}
   - {fileID: 11400000, guid: 934a7ce6076c590418a607e929b9e5ac, type: 2}
   - {fileID: 11400000, guid: da9e54b5c802e3349a16e5a66775171c, type: 2}
   - {fileID: 11400000, guid: 5b2483e930343754485fa5f337359c68, type: 2}
   - {fileID: 11400000, guid: 03aaa290d9381324294db1702c30f919, type: 2}
-  ySpawns: 00000000000000000400000004000000
+  - {fileID: 11400000, guid: 52d834f8918ac674182a2aa6937a9d39, type: 2}
+  - {fileID: 11400000, guid: 47ebabc1bd24ac94d9e4576e2dc61929, type: 2}
+  ySpawns: 0000000000000000

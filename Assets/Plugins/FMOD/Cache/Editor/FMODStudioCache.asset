@@ -189,6 +189,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3480
+--- !u!114 &-8525127146739963933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Attack/CanAttack
+  m_EditorClassIdentifier: 
+  Name: CanAttack
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-8491362314422355425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -666,7 +686,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: GroundhogFMOD/Build/Desktop/Master.bank
   Name: Master
-  lastModified: 637476424900000000
+  lastModified: 637476466015852825
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -683,6 +703,26 @@ MonoBehaviour:
   m_Name: parameter:/Attack/CanAttack
   m_EditorClassIdentifier: 
   Name: CanAttack
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-4629054934634040548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Shield/ShieldAudioState
+  m_EditorClassIdentifier: 
+  Name: ShieldAudioState
   Min: 0
   Max: 1
   Default: 0
@@ -709,7 +749,7 @@ MonoBehaviour:
   ID:
     data1: 1661448806
     data2: 2196126983
-  Exists: 1
+  Exists: 0
 --- !u!114 &-4525840244983852438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1110,7 +1150,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -8647655648865842399}
+  - {fileID: -4629054934634040548}
   MinDistance: 0
   MaxDistance: 0
   Length: 43480
@@ -1469,13 +1509,12 @@ MonoBehaviour:
   - {fileID: 4451352013717131707}
   - {fileID: -1538540500390573108}
   - {fileID: 8745013921398580112}
-  EditorParameters:
-  - {fileID: -4558939986694440411}
+  EditorParameters: []
   MasterBanks:
   - {fileID: -4910404851882516937}
   StringsBanks:
   - {fileID: 7354150644799842962}
-  stringsBankWriteTime: 637476424900000000
+  stringsBankWriteTime: 637476466015942891
   cacheVersion: 5
 --- !u!114 &309304017135835
 MonoBehaviour:
@@ -2091,7 +2130,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -4799936904335355310}
+  - {fileID: -8525127146739963933}
   MinDistance: 1
   MaxDistance: 7.2000003
   Length: 1532
@@ -2377,6 +2416,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &6538325998156966772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTest/Occlusion
+  m_EditorClassIdentifier: 
+  Name: Occlusion
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &6591694785715945607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2597,7 +2656,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: GroundhogFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637476424900000000
+  lastModified: 637476466015942891
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -2888,7 +2947,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 3745800232931295808}
+  - {fileID: 6538325998156966772}
   MinDistance: 1
   MaxDistance: 75
   Length: 46080
