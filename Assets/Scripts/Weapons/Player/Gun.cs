@@ -12,7 +12,7 @@ public class Gun : MonoBehaviour
     PlayerHUD hud;
 
     //Havokk
-    FMOD.Studio.EventInstance FireSound;
+    public FMOD.Studio.EventInstance FireSound;
 
     private void Start()
     {

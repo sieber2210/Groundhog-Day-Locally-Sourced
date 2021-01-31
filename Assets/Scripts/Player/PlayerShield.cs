@@ -14,7 +14,11 @@ public class PlayerShield : MonoBehaviour
     PlayerMovementInput inputObj;
     PlayerMovement_SO stats;
     GameObject shieldObj;
-    ShieldState state;    
+    ShieldState state;
+
+    //Havokk
+    FMOD.Studio.EventInstance shieldSound;
+    string audioState = "ShieldAudioState";
 
     private void Start()
     {
@@ -24,6 +28,9 @@ public class PlayerShield : MonoBehaviour
         shieldKeyInput = keyInput;
         state = ShieldState.IdleMin;
         shieldObj.SetActive(false);
+
+        //Havokk
+        shieldSound = FMODUnity.RuntimeManager.CreateInstance("event:/Shield");
     }
 
     private void Update()
@@ -44,7 +51,8 @@ public class PlayerShield : MonoBehaviour
                 Vector3 scale = shieldObj.transform.localScale;
                 scale = Vector3.Lerp(scale, Vector3.one * stats.maxSize, stats.scaleSpeed * Time.deltaTime);
                 shieldObj.transform.localScale = scale;
-                if(shieldObj.transform.localScale.x <= stats.maxSize - 0.01f)
+
+                if (shieldObj.transform.localScale.x <= stats.maxSize - 0.01f)
                 {
                     StartCoroutine(GrowIdle());
                 }
@@ -70,16 +78,27 @@ public class PlayerShield : MonoBehaviour
     {
         shieldObj.SetActive(true);
         state = ShieldState.Grow;
+
+        //Havokk
+        shieldSound.start();
     }
 
     IEnumerator GrowIdle()
     {
         yield return new WaitForSeconds(stats.shieldUpTime);
+
+        //Havokk
+        shieldSound.setParameterByName(audioState, 1f);
+        shieldSound.release();
+
         state = ShieldState.Shrink;
     }
 
     IEnumerator CoolDown()
     {
+        //Havokk
+        //FMODUnity.RuntimeManager.PlayOneShot("event:/ShieldDown", transform.position);
+
         shieldObj.SetActive(false);
         state = ShieldState.Cooldown;
         yield return new WaitForSeconds(stats.coolDown);

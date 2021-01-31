@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{565c8d07-c282-4296-aa56-8f8691a374c5}">
+		<property name="assetPath">
+			<value>Shield/Shield - Track 2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>7.3749886621315195</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{21890f59-691b-4060-90f2-2d287bf7bd30}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{4916c862-e86a-40c8-ab8a-e9bc36b367ed}">
+		<property name="name">
+			<value>ShieldAudioState</value>
+		</property>
+		<relationship name="folder">
+			<destination>{6e3b0870-90c8-4acf-a23f-5f6ff02672d4}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{df1f809e-97e1-42b8-9c76-d0de19767c04}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{df1f809e-97e1-42b8-9c76-d0de19767c04}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>ShieldUp</value>
+			<value>ShieldDown</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

@@ -7,6 +7,9 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseScreen;
 
+    [SerializeField]
+    public GameObject gun;
+
     //Havokk
 
     private void Update()
