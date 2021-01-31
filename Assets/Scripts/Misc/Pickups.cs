@@ -12,6 +12,7 @@ public class Pickups : MonoBehaviour
         {
             SwitchStatement(other);
         }
+        Destroy(gameObject);
     }
 
     void SwitchStatement(Collider other)
