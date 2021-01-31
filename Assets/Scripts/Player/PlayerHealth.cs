@@ -35,7 +35,7 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log("Player has died!");
         yield return new WaitForSeconds(3f);
         //currently reloading current scene on death. Replace with actual death system later
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("Lose");
     }
 
     public int CurrentHealth()
