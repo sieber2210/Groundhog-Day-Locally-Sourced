@@ -218,6 +218,9 @@
 		</property>
 	</object>
 	<object class="EventMixerGroup" id="{f091ac8b-a741-4600-9119-72cec6380fe8}">
+		<property name="volume">
+			<value>-2</value>
+		</property>
 		<property name="name">
 			<value>Audio 2</value>
 		</property>
@@ -253,6 +256,9 @@
 		</property>
 	</object>
 	<object class="EventMixerGroup" id="{50bc335f-910d-47a5-83ea-79a4f79c3123}">
+		<property name="volume">
+			<value>-2</value>
+		</property>
 		<property name="name">
 			<value>Audio 3</value>
 		</property>
@@ -286,11 +292,8 @@
 		</property>
 	</object>
 	<object class="TransitionDestinationSound" id="{c6c45d64-5d3a-47c9-aacf-69edb45a30a0}">
-		<property name="start">
-			<value>2</value>
-		</property>
 		<property name="length">
-			<value>0</value>
+			<value>2</value>
 		</property>
 	</object>
 	<object class="EventMixerGroup" id="{8d5cddfc-beee-400c-a750-928a6cb8db54}">

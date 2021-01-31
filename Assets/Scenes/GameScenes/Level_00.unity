@@ -327,6 +327,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8797525977603365024, guid: a41913e3539162d4aa0166cbb960344d,
         type: 3}
+      propertyPath: Event
+      value: event:/Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797525977603365024, guid: a41913e3539162d4aa0166cbb960344d,
+        type: 3}
+      propertyPath: StopEvent
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797525977603365024, guid: a41913e3539162d4aa0166cbb960344d,
+        type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}

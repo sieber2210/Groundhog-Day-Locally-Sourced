@@ -89,7 +89,7 @@ public class PlayerShield : MonoBehaviour
 
         //Havokk
         shieldSound.setParameterByName(audioState, 1f);
-        shieldSound.release();
+        //
 
         state = ShieldState.Shrink;
     }
@@ -97,11 +97,17 @@ public class PlayerShield : MonoBehaviour
     IEnumerator CoolDown()
     {
         //Havokk
-        //FMODUnity.RuntimeManager.PlayOneShot("event:/ShieldDown", transform.position);
+        shieldSound.setParameterByName(audioState, 0f);
 
         shieldObj.SetActive(false);
         state = ShieldState.Cooldown;
         yield return new WaitForSeconds(stats.coolDown);
         state = ShieldState.IdleMin;
+    }
+
+    public void OnDisable()
+    {
+        shieldSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        shieldSound.release();
     }
 }
