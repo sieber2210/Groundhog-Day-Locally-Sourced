@@ -28,6 +28,9 @@ public class PlayerHealth : MonoBehaviour
     {
         curHealth += amount;
         if (curHealth >= MaxHealth()) curHealth = MaxHealth();
+
+        //Havokk
+        FMODUnity.RuntimeManager.PlayOneShot("event:/HealthUp");
     }
 
     IEnumerator Die()

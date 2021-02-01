@@ -91,5 +91,8 @@ public class Gun : MonoBehaviour
     {
         curAmmo += amount;
         if (curAmmo >= gunType.ammo) curAmmo = gunType.ammo;
+
+        //Havokk
+        FMODUnity.RuntimeManager.PlayOneShot("event:/AmmoUp");
     }
 }
