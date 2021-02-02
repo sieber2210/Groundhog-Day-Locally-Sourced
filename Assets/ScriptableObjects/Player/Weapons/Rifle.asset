@@ -16,5 +16,5 @@ MonoBehaviour:
   damage: 10
   range: 100
   isAuto: 1
-  fireRate: 10
+  fireRate: 5
   ammo: 250
