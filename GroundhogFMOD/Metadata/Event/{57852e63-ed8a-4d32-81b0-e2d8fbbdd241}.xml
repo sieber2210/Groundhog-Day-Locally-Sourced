@@ -180,7 +180,7 @@
 	</object>
 	<object class="SingleSound" id="{0ecb8f2a-5931-436a-a583-c9320ed1b738}">
 		<property name="length">
-			<value>2.0170521541950115</value>
+			<value>2.017052154195011</value>
 		</property>
 		<property name="maxVoices">
 			<value>1</value>
@@ -195,7 +195,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{91369626-9322-481a-894b-6b472589ca41}">
 		<property name="volume">
-			<value>-1</value>
+			<value>-5.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 2</value>
